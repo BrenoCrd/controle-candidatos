@@ -8,13 +8,15 @@ public class ProcessoSeletivo {
         for (String candidato : candidatos){
 
         }
+    }
 
+    
     static void entrandoEmContato(String candidato){
         int tentativaRealizada = 1;
         boolean continuarTentando = true;
         boolean atendeu = false;
         do{
-            antendeu = atender();
+            atendeu = atender();
             continuarTentando = !atendeu;
             if (continuarTentando)
             tentativaRealizada++;
@@ -29,7 +31,7 @@ public class ProcessoSeletivo {
     }
 
     //metodo auxiliar
-    static boolean atender() {
+    static boolean atender () {
         return new Random().nextInt(3)==1;
     }
     static void imprimirSelecionados() {
